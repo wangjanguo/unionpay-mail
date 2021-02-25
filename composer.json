@@ -1,0 +1,21 @@
+{
+    "name": "weskiller/icbc-api-sdk",
+    "description": "ICBC mail api sdk, replace http client with guzzle/guzzle",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jianguo.wang",
+            "email": "jianguo.wang@dccsh.icbc.com.cn"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weskiller\\ICBC_APi_SDK\\": "src"
+        }
+    }
+}
