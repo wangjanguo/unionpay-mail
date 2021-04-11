@@ -74,7 +74,9 @@ class DefaultIcbcClient
         } else {
             throw new Exception("Only support GET or POST http method!");
         }
-        // 测试API地址：https://icbc-mail.icbc.com.cn/api/
+        // 测试API地址：https://users.unionpay.com/?Redirect=https://unionpay-mail.unionpay.com/api/
+        // 测试用户 username：wangjg
+        // 测试密码 password：wangjg@test!!!
         //增加了对传回报文中含有中文字符以及反斜杠的转换(json_encode(str,JSON_UNESCAPED_UNICODE(240)+JSON_UNESCAPED_SLASHES(80)=320))
         $respBizContentStr = json_encode(json_decode($respStr, true)[IcbcConstants::$RESPONSE_BIZ_CONTENT], 320);
         $sign = json_decode($respStr, true)[IcbcConstants::$SIGN];
