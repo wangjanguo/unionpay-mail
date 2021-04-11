@@ -1,1 +1,1 @@
-# icbc-mail
+# unionpay-mail
