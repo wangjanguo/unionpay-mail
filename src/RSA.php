@@ -25,7 +25,7 @@ class RSA
         }
         return base64_encode($signature);
     }
-
+    // 测试
     public static function verify($content, $signature, $publicKey, $algorithm)
     {
         if (IcbcConstants::$SIGN_SHA1RSA_ALGORITHMS == $algorithm) {
